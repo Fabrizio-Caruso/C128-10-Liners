@@ -41,8 +41,8 @@
         <PostBuildCommands />
     </BuildEvents>
     <BuildList>
-        <FileName>MiniConanPlus.bas</FileName>
         <FileName>test.bas</FileName>
+        <FileName>MiniConanPlus.bas</FileName>
     </BuildList>
     <DetermineBuildOrder>0</DetermineBuildOrder>
     <PaddingByte>0</PaddingByte>
@@ -70,7 +70,7 @@
             <Regions />
             <Breakpoints />
             <Bookmarks />
-            <Topmost>True</Topmost>
+            <Topmost>False</Topmost>
             <FileOpen>True</FileOpen>
         </SourceFile>
     </SourceFiles>
