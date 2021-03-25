@@ -1,0 +1,135 @@
+
+EXTENDED VERSION
+0poke52,48:poke56,48:clr:k=1944:d=1064:w=53272:z=56334:y=12288:fast:bank14:fora=yto12752:pokea,peek(a+40960):next:bank15:reada$:dime(40)
+1t=54272:poke2604,peek(2604)and240or12:pokez,peek(z)and254:poke1,peek(1)and251:poke1,peek(1)or4:pokez,peek(z)or1:pokew,peek(w)and240or12
+2h=66:q=20:s=40:color.,1:color4,1:fori=.to87:m=asc(mid$(a$,i+1))-1:m=m-62*(m=s):poke12816+i,m:next:slow:print"{light gray}{clear}{light green}the horde ii":getkeyk$
+3e=1:m=0:v=15:b=32:g=68:fori=.to39:e(i)=d+s+i:pokek+t+i,2:pokek+s+t+i,9:pokek+s+i,76:poked+s+i,67:next:s$="{cyan}score{white}":ifj>rthenr=j
+4j=.:h$="{green} hi{white}":gosub9:volv:data"{25}{45}{75}{75}{172}{158}{09}{21}{25}{37}{25}{41}{154}{25}{37}{41}{09}{29}{09}{09}{09}{09}{09}{21}{25}{37}{67}{67}{190}{130}{01}{01}{1}{1}{1}{1}{25}{37}{25}{41}{154}{25}{37}{41}{1}{1}{1}{1}{25}{37}{154}{41}{25}{25}{37}{67}{25}{1}{154}{1}{25}{1}{37}{1}{1}{1}{1}{1}{1}{1}{25}{37}{25}{41}{154}{25}{37}{41}{1}{1}{52}{52}{128}{76}{128}{128}{41}{128}"
+5f=rnd(.)*s:c=e(f):pokec,70:pokec+s,71:pokec,74:pokec+s,75:ifj>e*vthencolor4,3:sound3,y,2,.,.,.,2:e=e+1:color4,1:ife<vthenm=m+s:gosub9
+6e(f)=c+s:i=e(f):pokei-s,b:pokei,67:getk$:n=(k$="j")-(k$="l"):ifnthenc=q+n:ifc>=.thenifc<sthenpokek+q,b:q=c:pokek+q,x
+7ifi>=kthenprint"{home}{down}{red}game over":pokei,72:sleep2:getkeyk$:goto2:elseifk$=" "thenifx=hthenx=69:pokek+q,x:a=k+q-s:pokea,g:o=q:sound1,d,2,2,.,.,2,d
+8ifx>hthenife(o)>=athenpokee(o),72:pokee(o)+t,2:j=j+1:pokea,b:gosub9:goto5:elseifx>hthenpokea,b:a=a-80:pokea,g:on-(a>=d)goto5:x=h:elsegoto5
+9pokee(o),73:print"{home}"spc(v)s$;j;h$;r" {light green}lv{white}"e:x=h:pokek+q,x:pokee(o),b:pokee(o)+t,v:e(o)=d+s+o+m:pokee(o),67:sound2,d,1,.,.,.,3,.:return
+
+
+MAIN VARIABLES
+k: lower left-most player's position 
+
+EXPLAINED CODE
+
+0
+// Make some room to avoid collision with the BASIC code
+poke52,48:poke56,48:clr: 
+
+// Initialize
+k=1944:d=1064:w=53272:z=56334:y=12288: 
+
+// Fast mode, Read part of the rom set and store starting at 12288
+fast:bank14:fora=yto12752:pokea,peek(a+40960):next:bank15:reada$:dime(40) 
+
+
+1
+// 
+t=54272:poke2604,peek(2604)and240or12:pokez,peek(z)and254:poke1,peek(1)and251:poke1,peek(1)or4:pokez,peek(z)or1:pokew,peek(w)and240or12
+
+
+2
+
+// Initialize vars
+h=66:q=20:s=40:
+
+// Set screen colors to black
+color.,1:color4,1:
+
+// Read and set 11 user defined characters.
+// Remark: Special encoding:
+// 1. Add 1 to all values to avoid 0 (which would be an impossible character to edit)
+// 2. use 41 to encode 103 (which would be an impossible character to edit)
+fori=.to87:m=asc(mid$(a$,i+1))-1:m=m-62*(m=s):poke12816+i,m:next:
+
+// Set slow mode. Print game name and wait for a key press.
+slow:print"{light gray}{clear}{light green}the horde ii":getkeyk$
+
+
+3
+// Initialize vars
+e=1:m=0:v=15:b=32:g=68:
+
+// Display zombies on the second top line, display wall and set color for player area
+fori=.to39:e(i)=d+s+i:pokek+t+i,2:pokek+s+t+i,9:pokek+s+i,76:poked+s+i,67:next:
+
+// Initialize s$
+s$="{cyan}score{white}":ifj>rthenr=j
+
+
+4
+// Initialize variables
+j=.:h$="{green} hi{white}":
+
+// Display score
+gosub9:
+
+// Set volume to max
+volv:
+
+// Graphics data encoded as "encoded" characters. The encoding makes sure that only editable characters are used.
+data"{25}{45}{75}{75}{172}{158}{09}{21}{25}{37}{25}{41}{154}{25}{37}{41}{09}{29}{09}{09}{09}{09}{09}{21}{25}{37}{67}{67}{190}{130}{01}{01}{1}{1}{1}{1}{25}{37}{25}{41}{154}{25}{37}{41}{1}{1}{1}{1}{25}{37}{154}{41}{25}{25}{37}{67}{25}{1}{154}{1}{25}{1}{37}{1}{1}{1}{1}{1}{1}{1}{25}{37}{25}{41}{154}{25}{37}{41}{1}{1}{52}{52}{128}{76}{128}{128}{41}{128}"
+
+
+5
+// Select a random zombie
+f=rnd(.)*s:c=e(f):
+
+// Display 1st and 2nd frame of a moving zombie 
+pokec,70:pokec+s,71:pokec,74:pokec+s,75:
+
+// If new level is reached, then flash screen colors, make a high-pitched sound, increase level, if level is below 15, then lower the respawm zombie starting line
+ifj>e*vthencolor4,3:sound3,y,2,.,.,.,2:e=e+1:color4,1:ife<vthenm=m+s:gosub9
+
+
+6
+// The selected zombie is displayed at a below position
+e(f)=c+s:i=e(f):pokei-s,b:pokei,67:
+
+// Read keyboard. If key pressed is either J or L then compute new position. If new position is not outside the line, then update players position.
+getk$:n=(k$="j")-(k$="l"):ifnthenc=q+n:ifc>=.thenifc<sthenpokek+q,b:q=c:pokek+q,x
+
+
+7
+// If the zombie has reached the wall then print "game over", display happy zombie, wait 2 secs, wait for key press, jump to 2 (restart game)
+ifi>=kthenprint"{home}{down}{red}game over":pokei,72:sleep2:getkeyk$:goto2:
+
+// Othewise check if key pressed is the space bar, if it is and if the bow is loaded with the arrow, than set a new arrow and produce a sound
+elseifk$=" "thenifx=hthenx=69:pokek+q,x:a=k+q-s:pokea,g:o=q:sound1,d,2,2,.,.,2,d
+
+
+8
+// [This part is tricky because of how the ELSE statement is interpreted in BASIC V7, i.e., no scope exists, everthing is interpreted from left to right so that if the IF condition is false, the program jumps to the next ELSE statement.] 
+// If the arrow is moving and it has reached a zombie then display dead zombie, increase score, delete arrow and jump to routine at line 9. Restart main game loop.
+// If the arrow is moving and it has not reached a zombie, then move arrow upwards. Restart main game loop.
+// If the arrow is not moving restart main game loop.
+ifx>hthenife(o)>=athenpokee(o),72:pokee(o)+t,2:j=j+1:pokea,b:gosub9:goto5:elseifx>hthenpokea,b:a=a-80:poKa,g:gO5:elsegO5
+
+
+9
+// [Score update routine]
+
+// Display dead zombie
+pokee(o),73:
+
+// Display score line
+print"{home}"spc(v)s$;j;h$;r" {light green}lv{white}"e:
+
+// Reload bow
+x=h:pokek+q,x:
+
+// Display explosed zombie
+pokee(o),b:pokee(o)+t,v:
+
+// Reset zombie position
+e(o)=d+s+o+m:pokee(o),67:
+
+// Produce short noise sound
+sound2,d,1,.,.,.,3,.:return
+
+

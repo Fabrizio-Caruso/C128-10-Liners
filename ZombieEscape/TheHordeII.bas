@@ -6,5 +6,5 @@
 5f=rN(.)*s:c=e(f):poKc,70:poKc+s,71:poKc,74:poKc+s,75:ifj>e*vtHcolO4,3:sO3,y,2,.,.,.,2:e=e+1:colO4,1:ife<vtHm=m+s:goS9
 6e(f)=c+s:i=e(f):poKi-s,b:poKi,67:gEk$:n=(k$="j")-(k$="l"):ifntHc=q+n:ifc>=.tHifc<stHpoKk+q,b:q=c:poKk+q,x
 7ifi>=ktH?"{home}{down}{red}game over":poKi,72:sL2:gEkEk$:gO2:elseifk$=" "tHifx=htHx=69:poKk+q,x:a=k+q-s:poKa,g:o=q:sO1,d,2,2,.,.,2,d
-8ifx>htHife(o)>=atHpoKe(o),72:poKe(o)+t,2:j=j+1:poKa,b:goS9:gO5:elseifx>htHpoKa,b:a=a-80:poKa,g:on-(a>=d)gO5:x=h:elsegO5
+8ifx>htHife(o)>=atHpoKe(o),72:poKe(o)+t,2:j=j+1:poKa,b:goS9:gO5:elseifx>htHpoKa,b:a=a-80:poKa,g:gO5:elsegO5
 9poKe(o),73:?"{home}"spCv)s$;j;h$;r" {light green}lv{white}"e:x=h:poKk+q,x:poKe(o),b:poKe(o)+t,v:e(o)=d+s+o+m:poKe(o),67:sO2,d,1,.,.,.,3,.:reT
