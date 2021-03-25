@@ -44,6 +44,7 @@
         <FileName>zombie_escape.bas</FileName>
         <FileName>TheHordeII.bas</FileName>
         <FileName>toto.bas</FileName>
+        <FileName>test.bas</FileName>
     </BuildList>
     <DetermineBuildOrder>0</DetermineBuildOrder>
     <PaddingByte>0</PaddingByte>
@@ -53,6 +54,17 @@
     <!--End of screen designer settings-->
     <SourceFiles>
         <SourceFile>
+            <Name>test.bas</Name>
+            <PrgName />
+            <FileType>1</FileType>
+            <IncludeInBuild>True</IncludeInBuild>
+            <Regions />
+            <Breakpoints />
+            <Bookmarks />
+            <Topmost>False</Topmost>
+            <FileOpen>True</FileOpen>
+        </SourceFile>
+        <SourceFile>
             <Name>TheHordeII.bas</Name>
             <PrgName />
             <FileType>1</FileType>
@@ -60,7 +72,7 @@
             <Regions />
             <Breakpoints />
             <Bookmarks />
-            <Topmost>True</Topmost>
+            <Topmost>False</Topmost>
             <FileOpen>True</FileOpen>
         </SourceFile>
         <SourceFile>
