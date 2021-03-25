@@ -5,6 +5,6 @@
 4j=.:h$="{green} hi{white}":goS9:vOv:dA"{25}{45}{75}{75}{172}{158}{09}{21}{25}{37}{25}{41}{154}{25}{37}{41}{09}{29}{09}{09}{09}{09}{09}{21}{25}{37}{67}{67}{190}{130}{01}{01}{1}{1}{1}{1}{25}{37}{25}{41}{154}{25}{37}{41}{1}{1}{1}{1}{25}{37}{154}{41}{25}{25}{37}{67}{25}{1}{154}{1}{25}{1}{37}{1}{1}{1}{1}{1}{1}{1}{25}{37}{25}{41}{154}{25}{37}{41}{1}{1}{52}{52}{128}{76}{128}{128}{41}{128}"
 5f=rN(.)*s:c=e(f):poKc,70:poKc+s,71:poKc,74:poKc+s,75:ifj>e*vtHcolO4,3:sO3,y,2,.,.,.,2:e=e+1:colO4,1:ife<vtHm=m+s:goS9
 6e(f)=c+s:i=e(f):poKi-s,b:poKi,67:gEk$:n=(k$="j")-(k$="l"):ifntHc=q+n:ifc>=.tHifc<stHpoKk+q,b:q=c:poKk+q,x
-7ifi>=ktH?"{home}{down}{red}game over":poKi,72:sL2:gEkEk$:gO2:elseifk$=" "tHifx=htHx=69:poKk+q,x:a=k+q-s:o=q:sO1,d,2,2,.,.,2,d
+7ifi>=ktH?"{home}{down}{red}game over":poKi,72:sL2:gEkEk$:gO2:elseifk$=" "tHifx=htHx=69:poKk+q,x:a=k+q-s:poKa,g:o=q:sO1,d,2,2,.,.,2,d
 8ifx>htHife(o)>=atHpoKe(o),72:poKe(o)+t,2:j=j+1:poKa,b:goS9:gO5:elseifx>htHpoKa,b:a=a-80:poKa,g:on-(a>=d)gO5:x=h:elsegO5
 9poKe(o),73:?"{home}"spCv)s$;j;h$;r" {light green}lv{white}"e:x=h:poKk+q,x:poKe(o),b:poKe(o)+t,v:e(o)=d+s+o+m:poKe(o),67:sO2,d,1,.,.,.,3,.:reT
